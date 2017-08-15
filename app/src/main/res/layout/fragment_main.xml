@@ -5,13 +5,18 @@
     <!--Content-->
     <LinearLayout
         android:gravity="center_horizontal"
-        android:layout_margin="@dimen/margin"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
         <!--Logo-->
         <ImageView
+            android:src="@drawable/logo"
             android:layout_width="@dimen/icon"
             android:layout_height="@dimen/icon" />
         <!--User-->
