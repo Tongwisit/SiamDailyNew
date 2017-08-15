@@ -2,39 +2,50 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <!--Content-->
-    <LinearLayout
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
+    <ScrollView
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin"
-        android:layout_marginRight="@dimen/margin"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_height="match_parent">
+
+        <!--Content-->
+        <LinearLayout
+            android:background="#5affffff"
+            android:padding="@dimen/padding"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
 
 
-        <!--Logo-->
-        <ImageView
-            android:src="@drawable/logo"
-            android:layout_width="@dimen/icon"
-            android:layout_height="@dimen/icon" />
-        <!--User-->
+            <!--Logo-->
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="152dp"
+                android:layout_height="@dimen/icon" />
+            <!--User-->
             <EditText
+                android:textColorHint="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/edtUser"
                 android:inputType="text"
                 android:hint="@string/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        <!--Password-->
+            <!--Password-->
             <EditText
+                android:textColorHint="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryDark"
                 android:id="@+id/edtPassword"
-            android:inputType="textPassword"
-            android:hint="@string/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <!--New Regi-->
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--New Regi-->
             <TextView
                 android:id="@+id/txtNewRegister"
                 android:textStyle="bold"
@@ -47,9 +58,11 @@
 
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <!--BuLogintton -->
+    </ScrollView>
+
+    <!--Button Login -->
     <Button
         android:id="@+id/btnLogin"
         android:text="Login"
